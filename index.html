@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation Widget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="open-chat-button" onclick="toggleChat()">
+        <div class="bubble">
+            <img src="/assets/chat-bubble.png" alt="">
+        </div>
+    </button>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chatbot</h2>
+            <p class="paragraph">General technical support is available 24x7</p>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will be added dynamically here -->
+        </div>
+
+        <div class="chat-input" id="chat-form">
+            <input type="text" class="input-field" id="user-input" placeholder="Enter your question or message here.">
+            <button class="send-button" onclick="sendMessage()">
+                <img class="send-icon" src="/assets/Send.png" alt="send">
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/openai@4.23.0/index.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- Start of HubSpot Embed Code -->
+<!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/24947511.js"></script> -->
+<!-- End of HubSpot Embed Code -->
